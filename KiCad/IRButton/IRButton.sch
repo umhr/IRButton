@@ -1,0 +1,402 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L MCU_Module:Arduino_Nano_v3.x A1
+U 1 1 6207B534
+P 6300 3250
+F 0 "A1" H 6300 2161 50  0000 C CNN
+F 1 "Arduino_Nano_v3.x" H 6300 2070 50  0000 C CNN
+F 2 "Module:Arduino_Nano" H 6300 3250 50  0001 C CIN
+F 3 "http://www.mouser.com/pdfdocs/Gravitech_Arduino_Nano3_0.pdf" H 6300 3250 50  0001 C CNN
+	1    6300 3250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R1
+U 1 1 620836AA
+P 6350 2000
+F 0 "R1" V 6557 2000 50  0000 C CNN
+F 1 "R" V 6466 2000 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal" V 6280 2000 50  0001 C CNN
+F 3 "~" H 6350 2000 50  0001 C CNN
+	1    6350 2000
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:Q_NPN_EBC Q1
+U 1 1 62083FB0
+P 2300 2950
+F 0 "Q1" H 2491 2996 50  0000 L CNN
+F 1 "Q_NPN_EBC" H 2491 2905 50  0000 L CNN
+F 2 "Package_TO_SOT_THT:TO-92L_Inline_Wide" H 2500 3050 50  0001 C CNN
+F 3 "~" H 2300 2950 50  0001 C CNN
+	1    2300 2950
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Device:LED D1
+U 1 1 62084973
+P 2350 2000
+F 0 "D1" H 2343 2217 50  0000 C CNN
+F 1 "LED" H 2343 2126 50  0000 C CNN
+F 2 "LED_THT:LED_D5.0mm_Clear" H 2350 2000 50  0001 C CNN
+F 3 "~" H 2350 2000 50  0001 C CNN
+	1    2350 2000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6500 2250 6500 2000
+Wire Wire Line
+	2200 2000 2200 2750
+$Comp
+L power:GND #PWR0101
+U 1 1 62088D4D
+P 2900 5000
+F 0 "#PWR0101" H 2900 4750 50  0001 C CNN
+F 1 "GND" H 2905 4827 50  0000 C CNN
+F 2 "" H 2900 5000 50  0001 C CNN
+F 3 "" H 2900 5000 50  0001 C CNN
+	1    2900 5000
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0102
+U 1 1 62089A4A
+P 6300 4700
+F 0 "#PWR0102" H 6300 4450 50  0001 C CNN
+F 1 "GND" H 6305 4527 50  0000 C CNN
+F 2 "" H 6300 4700 50  0001 C CNN
+F 3 "" H 6300 4700 50  0001 C CNN
+	1    6300 4700
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0103
+U 1 1 6208A367
+P 6400 4700
+F 0 "#PWR0103" H 6400 4450 50  0001 C CNN
+F 1 "GND" H 6405 4527 50  0000 C CNN
+F 2 "" H 6400 4700 50  0001 C CNN
+F 3 "" H 6400 4700 50  0001 C CNN
+	1    6400 4700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6400 4250 6400 4700
+Wire Wire Line
+	6300 4250 6300 4700
+Wire Wire Line
+	2200 3150 2200 4700
+$Comp
+L Switch:SW_MEC_5E SW_D5
+U 1 1 62095D79
+P 3300 3350
+F 0 "SW_D5" V 3300 3262 50  0000 R CNN
+F 1 "SW_MEC_5E" V 3255 3262 50  0001 R CNN
+F 2 "Button_Switch_THT:SW_TH_Tactile_Omron_B3F-10xx" H 3300 3650 50  0001 C CNN
+F 3 "http://www.apem.com/int/index.php?controller=attachment&id_attachment=1371" H 3300 3650 50  0001 C CNN
+	1    3300 3350
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Switch:SW_MEC_5E SW_D4
+U 1 1 620991CA
+P 2350 4050
+F 0 "SW_D4" V 2350 4298 50  0000 L CNN
+F 1 "SW_MEC_5E" V 2395 4298 50  0001 L CNN
+F 2 "Button_Switch_THT:SW_TH_Tactile_Omron_B3F-10xx" H 2350 4350 50  0001 C CNN
+F 3 "http://www.apem.com/int/index.php?controller=attachment&id_attachment=1371" H 2350 4350 50  0001 C CNN
+	1    2350 4050
+	0    1    1    0   
+$EndComp
+$Comp
+L Switch:SW_MEC_5E SW_D9
+U 1 1 6209E2C3
+P 4200 3550
+F 0 "SW_D9" H 4200 3843 50  0000 C CNN
+F 1 "SW_MEC_5E" H 4200 3844 50  0001 C CNN
+F 2 "Button_Switch_THT:SW_TH_Tactile_Omron_B3F-10xx" H 4200 3850 50  0001 C CNN
+F 3 "http://www.apem.com/int/index.php?controller=attachment&id_attachment=1371" H 4200 3850 50  0001 C CNN
+	1    4200 3550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_MEC_5E SW_D2
+U 1 1 620A0121
+P 4500 3850
+F 0 "SW_D2" V 4500 3762 50  0000 R CNN
+F 1 "SW_MEC_5E" V 4455 3762 50  0001 R CNN
+F 2 "Button_Switch_THT:SW_TH_Tactile_Omron_B3F-10xx" H 4500 4150 50  0001 C CNN
+F 3 "http://www.apem.com/int/index.php?controller=attachment&id_attachment=1371" H 4500 4150 50  0001 C CNN
+	1    4500 3850
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	5800 3550 4400 3550
+$Comp
+L power:GND #PWR0105
+U 1 1 620AD78D
+P 3700 4700
+F 0 "#PWR0105" H 3700 4450 50  0001 C CNN
+F 1 "GND" H 3705 4527 50  0000 C CNN
+F 2 "" H 3700 4700 50  0001 C CNN
+F 3 "" H 3700 4700 50  0001 C CNN
+	1    3700 4700
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0106
+U 1 1 620ADB35
+P 4000 4700
+F 0 "#PWR0106" H 4000 4450 50  0001 C CNN
+F 1 "GND" H 4005 4527 50  0000 C CNN
+F 2 "" H 4000 4700 50  0001 C CNN
+F 3 "" H 4000 4700 50  0001 C CNN
+	1    4000 4700
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0107
+U 1 1 620ADF21
+P 4300 5100
+F 0 "#PWR0107" H 4300 4850 50  0001 C CNN
+F 1 "GND" H 4305 4927 50  0000 C CNN
+F 2 "" H 4300 5100 50  0001 C CNN
+F 3 "" H 4300 5100 50  0001 C CNN
+	1    4300 5100
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0108
+U 1 1 620AE1A7
+P 5400 4700
+F 0 "#PWR0108" H 5400 4450 50  0001 C CNN
+F 1 "GND" H 5405 4527 50  0000 C CNN
+F 2 "" H 5400 4700 50  0001 C CNN
+F 3 "" H 5400 4700 50  0001 C CNN
+	1    5400 4700
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0109
+U 1 1 620AE439
+P 2500 5100
+F 0 "#PWR0109" H 2500 4850 50  0001 C CNN
+F 1 "GND" H 2505 4927 50  0000 C CNN
+F 2 "" H 2500 5100 50  0001 C CNN
+F 3 "" H 2500 5100 50  0001 C CNN
+	1    2500 5100
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0110
+U 1 1 620B0498
+P 2200 4700
+F 0 "#PWR0110" H 2200 4450 50  0001 C CNN
+F 1 "GND" H 2205 4527 50  0000 C CNN
+F 2 "" H 2200 4700 50  0001 C CNN
+F 3 "" H 2200 4700 50  0001 C CNN
+	1    2200 4700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4000 3550 4000 4700
+NoConn ~ 4400 3450
+NoConn ~ 450  9250
+$Comp
+L Device:Battery BT1
+U 1 1 620B810D
+P 7200 3300
+F 0 "BT1" H 7308 3346 50  0000 L CNN
+F 1 "Battery" H 7308 3255 50  0000 L CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x02_P2.54mm_Horizontal" V 7200 3360 50  0001 C CNN
+F 3 "~" V 7200 3360 50  0001 C CNN
+	1    7200 3300
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0111
+U 1 1 620BA5E0
+P 7200 4700
+F 0 "#PWR0111" H 7200 4450 50  0001 C CNN
+F 1 "GND" H 7205 4527 50  0000 C CNN
+F 2 "" H 7200 4700 50  0001 C CNN
+F 3 "" H 7200 4700 50  0001 C CNN
+	1    7200 4700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_DPST_x2 SW0
+U 1 1 620BB7A4
+P 7200 2400
+F 0 "SW0" V 7154 2498 50  0000 L CNN
+F 1 "SW_DPST_x2" V 7245 2498 50  0000 L CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x02_P2.54mm_Vertical" H 7200 2400 50  0001 C CNN
+F 3 "~" H 7200 2400 50  0001 C CNN
+	1    7200 2400
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	7200 3500 7200 4700
+NoConn ~ 6400 2250
+NoConn ~ 5800 2650
+NoConn ~ 5800 2750
+NoConn ~ 5800 3250
+NoConn ~ 5800 3450
+NoConn ~ 5800 3950
+NoConn ~ 6800 3950
+NoConn ~ 6800 3850
+NoConn ~ 6800 3750
+NoConn ~ 6800 3650
+NoConn ~ 6800 3550
+NoConn ~ 6800 3450
+NoConn ~ 6800 3350
+NoConn ~ 6800 3250
+NoConn ~ 6800 3050
+NoConn ~ 6800 2750
+NoConn ~ 6800 2650
+$Comp
+L power:PWR_FLAG #FLG0102
+U 1 1 620C389F
+P 7200 2050
+F 0 "#FLG0102" H 7200 2125 50  0001 C CNN
+F 1 "PWR_FLAG" H 7200 2223 50  0000 C CNN
+F 2 "" H 7200 2050 50  0001 C CNN
+F 3 "~" H 7200 2050 50  0001 C CNN
+	1    7200 2050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6200 2250 6200 2200
+Wire Wire Line
+	1650 2100 1650 2200
+$Comp
+L power:PWR_FLAG #FLG0101
+U 1 1 6208C6BE
+P 1650 2100
+F 0 "#FLG0101" H 1650 2175 50  0001 C CNN
+F 1 "PWR_FLAG" H 1650 2273 50  0000 C CNN
+F 2 "" H 1650 2100 50  0001 C CNN
+F 3 "~" H 1650 2100 50  0001 C CNN
+	1    1650 2100
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0104
+U 1 1 6208B53E
+P 1650 2200
+F 0 "#PWR0104" H 1650 1950 50  0001 C CNN
+F 1 "GND" H 1655 2027 50  0000 C CNN
+F 2 "" H 1650 2200 50  0001 C CNN
+F 3 "" H 1650 2200 50  0001 C CNN
+	1    1650 2200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6200 2200 7200 2200
+Wire Wire Line
+	7200 2050 7200 2200
+Wire Wire Line
+	7200 2600 7200 3100
+NoConn ~ 4400 3650
+NoConn ~ 5800 3850
+Wire Wire Line
+	5800 2850 4500 2850
+Wire Wire Line
+	4500 2850 4500 3650
+NoConn ~ 5800 3650
+$Comp
+L Switch:SW_MEC_5E SW_D11
+U 1 1 6209F2BE
+P 5300 3950
+F 0 "SW_D11" H 5300 4335 50  0000 C CNN
+F 1 "SW_MEC_5E" H 5300 4244 50  0001 C CNN
+F 2 "Button_Switch_THT:SW_TH_Tactile_Omron_B3F-10xx" H 5300 4250 50  0001 C CNN
+F 3 "http://www.apem.com/int/index.php?controller=attachment&id_attachment=1371" H 5300 4250 50  0001 C CNN
+	1    5300 3950
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5800 3750 5400 3750
+Wire Wire Line
+	5400 4150 5400 4700
+$Comp
+L Switch:SW_MEC_5E SW_D7
+U 1 1 6208E758
+P 2650 3550
+F 0 "SW_D7" V 2650 3798 50  0000 L CNN
+F 1 "SW_MEC_5E" V 2695 3798 50  0001 L CNN
+F 2 "Button_Switch_THT:SW_TH_Tactile_Omron_B3F-10xx" H 2650 3850 50  0001 C CNN
+F 3 "http://www.apem.com/int/index.php?controller=attachment&id_attachment=1371" H 2650 3850 50  0001 C CNN
+	1    2650 3550
+	0    1    1    0   
+$EndComp
+NoConn ~ 2650 3350
+Connection ~ 7200 2200
+Wire Wire Line
+	2450 3050 2450 3850
+NoConn ~ 2350 3850
+NoConn ~ 5300 3750
+Wire Wire Line
+	2500 2000 6200 2000
+Wire Wire Line
+	5800 2950 2500 2950
+Wire Wire Line
+	5800 3050 2450 3050
+Wire Wire Line
+	2750 3350 5800 3350
+Wire Wire Line
+	5800 3150 3300 3150
+NoConn ~ 3200 3150
+Wire Wire Line
+	2650 3750 2750 3750
+Connection ~ 2750 3750
+Wire Wire Line
+	2350 4250 2450 4250
+Wire Wire Line
+	2450 4250 2450 5100
+Wire Wire Line
+	2450 5100 2500 5100
+Connection ~ 2450 4250
+Wire Wire Line
+	2750 5000 2900 5000
+Wire Wire Line
+	2750 3750 2750 5000
+Wire Wire Line
+	4500 4050 4500 5100
+Wire Wire Line
+	4500 5100 4300 5100
+Wire Wire Line
+	3300 3550 3300 4050
+Wire Wire Line
+	3300 4700 3700 4700
+Wire Wire Line
+	3200 3550 3300 3550
+Connection ~ 3300 3550
+Wire Wire Line
+	4000 3450 4000 3550
+Connection ~ 4000 3550
+Wire Wire Line
+	5300 4150 5400 4150
+Connection ~ 5400 4150
+Wire Wire Line
+	4400 4050 3300 4050
+Wire Wire Line
+	3300 4050 3300 3550
+Connection ~ 3300 4050
+Wire Wire Line
+	3300 4050 3300 4700
+$EndSCHEMATC
